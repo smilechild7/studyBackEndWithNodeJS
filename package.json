@@ -1,0 +1,23 @@
+{
+  "name": "contacts-manager",
+  "version": "1.0.0",
+  "description": "constacts manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smilechild7/studyNodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smilechild7/studyNodeJS/issues"
+  },
+  "homepage": "https://github.com/smilechild7/studyNodeJS#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
