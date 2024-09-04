@@ -19,5 +19,6 @@
   "homepage": "https://github.com/smilechild7/studyNodeJS#readme",
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "type": "module"
 }

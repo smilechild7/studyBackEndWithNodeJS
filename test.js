@@ -1,4 +1,4 @@
-const http = require("node:http");
+import http from "http";  
 
 const server = http.createServer((req, res) => {
   console.log("요청 발생!");
