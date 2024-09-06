@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 // express를 실행하면 app이라는 서버가 만들어진다. 익스프레스의 기능 사용 가능.
 const app = express();
+const router = express.Router();
 const port = 3000;
 
 // HTTP 요청 (GET, POST, PUT, ...) 중 GET 요청을 처리하려면 get 함수를 사용. 
@@ -41,6 +42,17 @@ app.put("/contacts/:id", (req, res) => {
 app.delete("/contacts/:id", (req, res) => {
     res.status(200).send(`Delete Contact for ID : ${req.params.id}`)
 });
+
+// router.route("/contacts")
+//     .get((req, res) => {})
+//     .post((req, res) => {});
+
+// router.route("/contacts/:id")
+//     .get((req, res) => {})
+//     .post((req, res) => {})
+//     .delete((req, res) => {});
+
+
 
 // 지정한 포트로 요청이 들어오는지 리스닝한다. 요청이 들어오면 뒤에 오는 콜백함수를 실행.
 app.listen(port, ()=>{
